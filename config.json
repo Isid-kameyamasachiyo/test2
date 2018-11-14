@@ -13,9 +13,25 @@
 	},
 	"arguments": {
 		"execute": {
-			"inArguments": [{
-				"myInArgument": "inArgument coming from iframe"
-			}],
+			"inArguments": [
+				             {   "contactFirstName": "{{Contact.Default.FirstName}}"
+		                 },
+		                 {
+		                     "contactLastName": "{{Contact.Default.LastName}}"
+		                 },
+		                 {
+		                     "contactIdentifier": "{{Contact.Key}}"
+		                 },
+		                 {
+		                     "emailAddress": "{{InteractionDefaults.Email}}"
+		                 },
+		                 {
+		                     "twitterHandle": "{{Contact.Default.Twitter}}"
+		                 },
+		                 {
+		                     "lastLogin": "{{Contact.Attribute.Engagement.LastLogin}}"
+		                 }
+],
 			"outArguments": [],
 			"url": "https://isidtestapp001.herokuapp.com/"
 		}
