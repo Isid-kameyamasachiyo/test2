@@ -2,9 +2,7 @@
 	"workflowApiVersion": "1.1",
 	"metaData": {
 		"icon": "images/icon.png",
-		"category": "message",
-		"isConfigured": "False",
-		"configurationDisabled": "False"
+		"category": "customer"
 	},
 	"type": "myActivityType",
 	"lang": {
