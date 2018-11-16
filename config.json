@@ -3,8 +3,8 @@
 	"metaData": {
 		"icon": "images/icon.png",
 		"category": "message",
-		"isConfigured": "True",
-		"configurationDisabled": "True"
+		"isConfigured": "False",
+		"configurationDisabled": "False"
 	},
 	"type": "myActivityType",
 	"lang": {
