@@ -6,7 +6,7 @@
 	},
 	"type": "EMAILV2",
 	"lang": {
-		"ja": {
+		"en-US": {
 			"name": "Custom Activity",
 			"description": "A custom Journey Builder activity using workflow API v1.1 format."
 		}
