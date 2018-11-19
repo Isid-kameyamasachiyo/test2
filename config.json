@@ -4,7 +4,7 @@
 		"icon": "images/icon.png",
 		"category": "message"
 	},
-	"type": "myActivityType",
+	"type": "MultiCriteriaDecision",
 	"lang": {
 		"ja": {
 			"name": "Custom Activity",
