@@ -4,7 +4,7 @@
 		"icon": "images/icon.png",
 		"category": "message"
 	},
-	"type": "MultiCriteriaDecision",
+	"type": "EMAILV2",
 	"lang": {
 		"ja": {
 			"name": "Custom Activity",
