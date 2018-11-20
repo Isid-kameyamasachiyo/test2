@@ -4,7 +4,7 @@
 		"icon": "images/icon.png",
 		"category": "message"
 	},
-	"type": "EMAILV2",
+	"type": "myActivityType",
 	"lang": {
 		"en-US": {
 			"name": "Custom Activity",
@@ -14,7 +14,8 @@
 	"arguments": {
 		"execute": {
 			"inArguments": [
-				             {   "contactFirstName": "{{Contact.Default.FirstName}}"
+				             {
+											    "contactFirstName": "{{Contact.Default.FirstName}}"
 		                 },
 		                 {
 		                     "contactLastName": "{{Contact.Default.LastName}}"
@@ -24,12 +25,6 @@
 		                 },
 		                 {
 		                     "emailAddress": "{{InteractionDefaults.Email}}"
-		                 },
-		                 {
-		                     "twitterHandle": "{{Contact.Default.Twitter}}"
-		                 },
-		                 {
-		                     "lastLogin": "{{Contact.Attribute.Engagement.LastLogin}}"
 		                 }
 ],
 			"outArguments": [
@@ -42,16 +37,16 @@
 	},
 	"configurationArguments": {
 		"save": {
-			"url": "URI/for/your/activity/save"
+			"url": "https://isidtestapp001.herokuapp.com/activities/save"
 		},
 		"publish": {
-			"url": "URI/for/your/activity/publish"
+			"url": "https://isidtestapp001.herokuapp.com/activities/publish"
 		},
 		"validate": {
-			"url": "URI/for/your/activity/validate"
+			"url": "https://isidtestapp001.herokuapp.com/activities/validate"
 		},
 		"stop": {
-			"url": "URI/for/your/activity/stop"
+			"url": "https://isidtestapp001.herokuapp.com/activities/stop"
 		}
 	},
 	"wizardSteps": [{
