@@ -14,39 +14,20 @@
 	"arguments": {
 		"execute": {
 			"inArguments": [
-				             {
-											    "contactFirstName": "{{Contact.Default.FirstName}}"
-		                 },
-		                 {
-		                     "contactLastName": "{{Contact.Default.LastName}}"
-		                 },
-		                 {
-		                     "contactIdentifier": "{{Contact.Key}}"
-		                 },
-		                 {
-		                     "emailAddress": "{{InteractionDefaults.Email}}"
-		                 }
+				             {"contactFirstName": "{{Contact.Default.FirstName}}"},
+		                 {"contactLastName": "{{Contact.Default.LastName}}"},
+		                 {"contactIdentifier": "{{Contact.Key}}"},
+		                 {"emailAddress": "{{InteractionDefaults.Email}}"}
 ],
 			"outArguments": [
-				             {
-			                   "foundSignupDate": ""
-			               }
+				             {"foundSignupDate": ""}
 			],
 			"url": "https://isidtestapp001.herokuapp.com/"
 		}
 	},
 	"configurationArguments": {
-		"save": {
-			"url": "https://isidtestapp001.herokuapp.com/activities/save"
-		},
-		"publish": {
+			"publish": {
 			"url": "https://isidtestapp001.herokuapp.com/activities/publish"
-		},
-		"validate": {
-			"url": "https://isidtestapp001.herokuapp.com/activities/validate"
-		},
-		"stop": {
-			"url": "https://isidtestapp001.herokuapp.com/activities/stop"
 		}
 	},
 	"wizardSteps": [{
@@ -71,11 +52,53 @@
 		"configModal": {
 			"height": 200,
 			"width": 300,
-			"fullscreen": false
+			"fullscreen": true
 		}
 	},
 	"schema": {
 		"arguments": {
+			"endDate": {
+		            "dataType": "Date",
+		            "isNullable": false,
+		            "direction": "Out",
+		            "readOnly": false,
+		            "access": "Hidden"
+		          },
+		          "waitDefinitionId": {
+		            "dataType": "Text",
+		            "isNullable": false,
+		            "direction": "In",
+		            "readOnly": false,
+		            "access": "Hidden"
+		          },
+		          "waitForEventId": {
+		            "dataType": "Text",
+		            "isNullable": true,
+		            "direction": "In",
+		            "readOnly": false,
+		            "access": "Hidden"
+		          },
+		          "executionMode": {
+		            "dataType": "Text",
+		            "isNullable": false,
+		            "direction": "In",
+		            "readOnly": false,
+		            "access": "Hidden"
+		          },
+		          "startActivityKey": {
+		            "dataType": "Text",
+		            "isNullable": true,
+		            "direction": "In",
+		            "readOnly": false,
+		            "access": "Hidden"
+		          },
+		          "waitQueueId": {
+		            "dataType": "LongNumber",
+		            "isNullable": true,
+		            "direction": "In",
+		            "readOnly": false,
+		            "access": "Hidden"
+		          },
 			"execute": {
 				"inArguments": [{
 					"myInArgument": {
