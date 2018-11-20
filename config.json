@@ -50,6 +50,14 @@
 		{"label":"Step 3","key": "step3"},
 		{"label":"Step 4","key": "step4","active": false}
 	],
+
+	"outcomes": [
+	{
+	  "key": "step1",
+	  "next": "step2"
+	}
+	],
+
 	"userInterfaces": {
 		"configModal": {
 			"height": 200,
@@ -58,6 +66,17 @@
 		}
 	},
 	"schema": {
+		      "sendableCustomObjectField" : "SubscriberKey",
+		      "SendableSubscriberField" : "SubscriberKey",
+		        "fields": [
+		             {
+		                "name": "SubscriberKey",
+		                "dataType": "text",
+		                "maxLength": "50",
+		                "isNullable": false,
+		                "defaultValue": ""
+		            }
+		        ]
 		"arguments": {
 			"execute": {
 				"inArguments": [{
