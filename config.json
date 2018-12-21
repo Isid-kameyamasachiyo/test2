@@ -68,18 +68,7 @@
 			"fullscreen": false
 		}
 	},
-	"schema": {
-		      "sendableCustomObjectField" : "SubscriberKey",
-		      "SendableSubscriberField" : "SubscriberKey",
-		        "fields": [
-		             {
-		                "name": "SubscriberKey",
-		                "dataType": "text",
-		                "maxLength": "50",
-		                "isNullable": false,
-		                "defaultValue": ""
-		            }
-		        ]
+	"schema":{
 		"arguments": {
 			"execute": {
 				"inArguments": [{
