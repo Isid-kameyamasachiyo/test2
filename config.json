@@ -15,60 +15,56 @@
 		"execute": {
 			"inArguments": [
 				{
-						"contactFirstName": "{{Contact.Default.FirstName}}"
-				},
-				{
-						"contactLastName": "{{Contact.Default.LastName}}"
-				},
-				{
 						"contactIdentifier": "{{Contact.Key}}"
 				},
 				{
 						"emailAddress": "{{InteractionDefaults.Email}}"
 				}
-							],
-			"outArguments": [
-			{
-                    "foundSignupDate": ""
-                }
-            ],
-      "url": "https://isidtestapp001.herokuapp.com/execute"
-   }
+		],
+			"outArguments": [],
+			"url": "https://isidtestapp001.herokuapp.com/"
+		}
 	},
 	"configurationArguments": {
-		  "save": {
-	  },
-			"publish": {
+		"save": {
+			"url": "URI/for/your/activity/save"
 		},
-		  "validate": {
-    },
-      "edit": {
-            "uri": "https://isidtestapp001.herokuapp.com/index.html",
-            "height": 350,
-            "width": 550
-	}
-},
-	"wizardSteps": [
-		{"label":"Step 1","key": "step1"},
-		{"label":"Step 2","key": "step2"},
-		{"label":"Step 3","key": "step3"},
-		{"label":"Step 4","key": "step4","active": false}
-	],
-
-	"outcomes": [
-	{
-	  "key": "step1",
-	  "next": "step2"
-	}
+		"publish": {
+			"url": "URI/for/your/activity/publish"
+		},
+		"validate": {
+			"url": "URI/for/your/activity/validate"
+		},
+		"stop": {
+			"url": "URI/for/your/activity/stop"
+		}
+	},
+	"wizardSteps": [{
+			"label": "Step 1",
+			"key": "step1"
+		},
+		{
+			"label": "Step 2",
+			"key": "step2"
+		},
+		{
+			"label": "Step 3",
+			"key": "step3"
+		},
+		{
+			"label": "Step 4",
+			"key": "step4",
+			"active": false
+		}
 	],
 	"userInterfaces": {
 		"configModal": {
-			"height": 200,
-			"width": 300,
-			"fullscreen": false
+			"height": 400,
+			"width": 600,
+			"fullscreen": true
 		}
 	},
-	"schema":{
+	"schema": {
 		"arguments": {
 			"execute": {
 				"inArguments": [{
